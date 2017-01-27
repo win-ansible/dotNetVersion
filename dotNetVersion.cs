@@ -129,7 +129,7 @@ class DotNetVersion {
       }
       return v;
   }
-  static void Main() {
+  static void Main(string[] args) {
       Version version = Get45or451FromRegistry();
 
       if (version == null) {
@@ -140,6 +140,9 @@ class DotNetVersion {
       } else {
           Console.WriteLine("0");
       }
-      Console.ReadLine();
+      if (args.Length == 0)
+      {
+          Console.ReadLine();
+      }
   }
 }
