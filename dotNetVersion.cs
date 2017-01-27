@@ -136,9 +136,9 @@ class DotNetVersion {
           version = Get1to4LatestVersionFromRegistry();
       }
       if (version != null) {
-          Console.WriteLine(version);
+          System.Console.Write(version);
       } else {
-          Console.WriteLine("0");
+          System.Console.Write("0");
       }
       if (args.Length == 0)
       {
